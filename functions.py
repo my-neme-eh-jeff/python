@@ -18,6 +18,14 @@ print("List after copying",list3)
 print("Original List ",list1)
 list3=list1.clear()
 print("List after clearing",list3)
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+list_union = set(list1 + list2)
+print(f"List Union: {list_union}")
+list_intersection = set(list1).intersection(set(list2))
+print(f"List Intersection: {list_intersection}")
+list_difference = set(list1).difference(set(list2))
+print(f"List Difference: {list_difference}")
 
 tuple1=(10,40,20,25,80,90,30,25)
 print("Original tuple ",tuple1)
@@ -28,6 +36,14 @@ print("Sorting in tuple ",sorted(tuple1))
 print("Min in tuple ",min(tuple1))
 print("Max in tuple ",max(tuple1))
 print("Sum of tuple ",sum(tuple1))
+tuple1 = (1, 2, 3, 4)
+tuple2 = (3, 4, 5, 6)
+tuple_union = set(tuple1 + tuple2)
+print(f"Tuple Union: {tuple_union}")
+tuple_intersection = set(tuple1).intersection(set(tuple2))
+print(f"Tuple Intersection: {tuple_intersection}")
+tuple_difference = set(tuple1).difference(set(tuple2))
+print(f"Tuple Difference: {tuple_difference}")
 
 set1={'a','b','c','d','e'}
 set1.add('f')
@@ -40,6 +56,15 @@ set1.pop()
 print("Set after popping element",set1)
 set1.clear()
 print("Set after clearing element",set1)
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+set_union = set1.union(set2)
+print(f"Set Union: {set_union}")
+set_intersection = set1.intersection(set2)
+print(f"Set Intersection: {set_intersection}")
+set_difference = set1.difference(set2)
+print(f"Set Difference: {set_difference}")
+
 
 dict1 = {'1':'One','2':'Two','3':'Three'}
 print("Original dictionary:",dict1)
@@ -49,6 +74,15 @@ dict2 = dict1.copy()
 print("Copied dictionary:",dict2)
 dict1.clear()
 print("The dictionary after clearing:",dict1)
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'c': 3, 'd': 4, 'e': 5}
+dict_union = {**dict1, **dict2}
+print(f"Dictionary Union: {dict_union}")
+dict_intersection = set(dict1.keys()).intersection(set(dict2.keys()))
+print(f"Dictionary Intersection: {dict_intersection}")
+dict_difference = set(dict1.keys()).difference(set(dict2.keys()))
+print(f"Dictionary Difference: {dict_difference}")
+
 
 def histogram(l):
     s= list(set(l))

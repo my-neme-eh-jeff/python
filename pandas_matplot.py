@@ -47,23 +47,16 @@ data={
     'name':['abcd','efgh','xyzq','erff']
 }
 df=pd.DataFrame(data)
-
 df.fillna(df.mean())
-
 """# filling Null Values with median"""
-
 data={
     'sapid':[156,159,160,None],
     'name':['abcd','efgh','xyzq','erff']
 }
 df=pd.DataFrame(data)
-
 df.fillna(df.median())
-
 """# Use of describe method"""
-
 df.describe()
-
 """# Plotting a graph"""
 
 import matplotlib.pyplot as plt
